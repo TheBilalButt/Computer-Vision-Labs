@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/TheBilalButt"><img src="https://img.shields.io/badge/AUTHOR-TheBilalButt-161b22?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile" /></a>
   <a href="https://bilalbutt.tech/"><img src="https://img.shields.io/badge/PORTFOLIO-bilalbutt.tech-e50914?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
-  <img src="https://img.shields.io/badge/CURRICULUM-LAB_01_TO_09-00c853?style=for-the-badge" alt="Curriculum" />
+  <img src="https://img.shields.io/badge/CURRICULUM-LAB_01_TO_10-00c853?style=for-the-badge" alt="Curriculum" />
   <img src="https://img.shields.io/badge/STACK-OPENCV_/_PYTHON-007acc?style=for-the-badge&logo=python&logoColor=white" alt="Stack" />
 </p>
 
@@ -21,9 +21,9 @@
 
 ## Overview.
 
-This repository consolidates the complete set of academic laboratory assignments, research investigations, and practical implementations developed for the advanced Computer Vision curriculum. 
+This repository consolidates the complete set of academic laboratory assignments, research investigations, and practical implementations developed for the advanced Computer Vision and Machine Learning curriculum. 
 
-It covers foundational spatial domain filtering, edge detection and boundary localization, local feature extraction (HOG and SIFT), evolutionary optimization with Genetic Algorithms for medical diagnosis, and multimodal psychiatric visual state analysis.
+It covers foundational spatial domain filtering, edge detection and boundary localization, local feature extraction (HOG and SIFT), evolutionary optimization with Genetic Algorithms for medical diagnosis, multimodal psychiatric visual state analysis, and end-to-end comparative machine learning regression model training.
 
 <br />
 
@@ -41,6 +41,7 @@ It covers foundational spatial domain filtering, edge detection and boundary loc
 | **Mid Exam** | Comparative Analysis: HOG vs Dense SIFT | HOG + SVM vs Dense SIFT + SVM Comparative Benchmark, ROC Curves, Confusion Matrices | BloodMNIST Cellular Dataset | [Launch Colab](https://colab.research.google.com/github/TheBilalButt/Computer-Vision-Labs/blob/main/Lab-Mid-HOG-vs-SIFT/42_BilalButt_LabMid.ipynb) |
 | **Lab 08** | Feature Matching and Homography | SIFT, ORB, FLANN Matcher, Lowe Ratio Test, RANSAC Homography, Perspective Warping | Planar Scene Targets | [Launch Colab](https://colab.research.google.com/github/TheBilalButt/Computer-Vision-Labs/blob/main/Lab-08-Feature-Matching-Homography/Lab08_Feature_Matching_Homography.ipynb) |
 | **Lab 09** | Multimodal Psychological State Analysis | Multimodal Feature Fusion, Facial Action Units, Vocal Formants, Linguistic Cues | Multimodal Affect Datasets | [View Full Paper](Lab-09-Psychological-State-Analysis/paper.pdf) |
+| **Lab 10** | Model Training & Comparative ML Regression | 6 Regression Models (OLS, Decision Tree, Random Forest, XGBoost, KNN, MLP) | California Housing Dataset | [Launch Colab](https://colab.research.google.com/github/TheBilalButt/Computer-Vision-Labs/blob/main/Lab-10-Model-Training/Lab10_Model_Training.ipynb) |
 
 <br />
 
@@ -85,6 +86,10 @@ It covers foundational spatial domain filtering, edge detection and boundary loc
 ### Lab 09: Psychological State Analysis Using Multimodal AI
 - **Folder:** [`Lab-09-Psychological-State-Analysis/`](Lab-09-Psychological-State-Analysis/)
 - Full academic research paper and software package evaluating multimodal behavioral indicators (facial affect, vocal tone, linguistic semantics) for psychological state estimation.
+
+### Lab 10: Model Training and Comparative Machine Learning Regression
+- **Folder:** [`Lab-10-Model-Training/`](Lab-10-Model-Training/)
+- Empirical comparative benchmark of six regression architectures (Linear Regression, Decision Tree, Random Forest, XGBoost, K-Nearest Neighbors, MLP Neural Network) on the California Housing dataset. Evaluates leak-free data transformations, multi-metric performance rankings, and runtime complexity trade-offs with complete visualizations.
 
 <br />
 
@@ -131,6 +136,18 @@ Computer-Vision-Labs/
 │   ├── paper.pdf
 │   ├── paper.md
 │   └── README.md
+├── Lab-10-Model-Training/
+│   ├── Lab10_Model_Training.ipynb
+│   ├── Comparative_Machine_Learning_Regression.ipynb
+│   ├── train_and_evaluate.py
+│   ├── create_notebook.py
+│   ├── requirements.txt
+│   ├── README.md
+│   └── visualizations/
+│       ├── actual_vs_predicted_2x3.png
+│       ├── rmse_comparison_bar.png
+│       ├── r2_comparison_bar.png
+│       └── model_comparison_dashboard.png
 └── README.md
 ```
 
