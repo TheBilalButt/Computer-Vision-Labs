@@ -136,10 +136,25 @@ $$\text{Trainable Parameters} = (K_h \times K_w \times C_{\text{in}} + 1) \times
 - **Are the outputs identical or different?**
   They are **identical**. `Conv → ReLU → MaxPool` and `Conv → MaxPool → ReLU` produce the exact same numbers because `ReLU(x) = max(0, x)` is monotonically non-decreasing.
 - **Proof on a `2x2` patch with negative numbers:**
-  Let $P = \begin{bmatrix} -4 & -1 \\ -3 & 2 \end{bmatrix}$:
-  - **Order 1 (`ReLU → MaxPool`):** $\text{ReLU}(P) = \begin{bmatrix} 0 & 0 \\ 0 & 2 \end{bmatrix} \implies \text{MaxPool} = \max(0, 0, 0, 2) = \mathbf{2}$.
-  - **Order 2 (`MaxPool → ReLU`):** $\text{MaxPool}(P) = \max(-4, -1, -3, 2) = 2 \implies \text{ReLU}(2) = \mathbf{2}$.
-  Even if all numbers are negative (e.g., `[-5, -2; -8, -1]`), Order 1 gives `max(0,0,0,0) = 0` and Order 2 gives `ReLU(-1) = 0`.
+  Let `P` be a `2x2` patch:
+
+  ```text
+  P = [ -4  -1 ]
+      [ -3   2 ]
+  ```
+
+  - **Order 1 (`ReLU → MaxPool`):**
+    ```text
+    ReLU(P) = [ 0  0 ]   -->   MaxPool = max(0, 0, 0, 2) = 2
+              [ 0  2 ]
+    ```
+  - **Order 2 (`MaxPool → ReLU`):**
+    ```text
+    MaxPool(P) = max(-4, -1, -3, 2) = 2   -->   ReLU(2) = 2
+    ```
+  Even if all numbers are negative (e.g., `[-5, -2; -8, -1]`), Order 1 gives `max(0, 0, 0, 0) = 0` and Order 2 gives `ReLU(-1) = 0`.
+
+![Question 4 Commutativity Visual Proof](visualizations/part3_q4_commutativity_proof.png)
 - **Computational efficiency:**
   `Conv → MaxPool → ReLU` is **faster and cheaper**. Max Pooling shrinks the feature map to **25% of its size** (since 2x2 stride 2 cuts height and width in half), so ReLU only has to process one quarter as many numbers.
 
