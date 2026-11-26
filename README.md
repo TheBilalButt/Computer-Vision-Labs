@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/TheBilalButt"><img src="https://img.shields.io/badge/AUTHOR-TheBilalButt-161b22?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile" /></a>
   <a href="https://bilalbutt.tech/"><img src="https://img.shields.io/badge/PORTFOLIO-bilalbutt.tech-e50914?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
-  <img src="https://img.shields.io/badge/CURRICULUM-LAB_01_TO_10-00c853?style=for-the-badge" alt="Curriculum" />
+  <img src="https://img.shields.io/badge/CURRICULUM-LAB_01_TO_12-00c853?style=for-the-badge" alt="Curriculum" />
   <img src="https://img.shields.io/badge/STACK-OPENCV_/_PYTHON-007acc?style=for-the-badge&logo=python&logoColor=white" alt="Stack" />
 </p>
 
@@ -42,6 +42,8 @@ It covers foundational spatial domain filtering, edge detection and boundary loc
 | **Lab 08** | Feature Matching and Homography | SIFT, ORB, FLANN Matcher, Lowe Ratio Test, RANSAC Homography, Perspective Warping | Planar Scene Targets | [Launch Colab](https://colab.research.google.com/github/TheBilalButt/Computer-Vision-Labs/blob/main/Lab-08-Feature-Matching-Homography/Lab08_Feature_Matching_Homography.ipynb) |
 | **Lab 09** | Multimodal Psychological State Analysis | Multimodal Feature Fusion, Facial Action Units, Vocal Formants, Linguistic Cues | Multimodal Affect Datasets | [View Full Paper](Lab-09-Psychological-State-Analysis/paper.pdf) |
 | **Lab 10** | Model Training & Comparative ML Regression | 6 Regression Models (OLS, Decision Tree, Random Forest, XGBoost, KNN, MLP) | California Housing Dataset | [Launch Colab](https://colab.research.google.com/github/TheBilalButt/Computer-Vision-Labs/blob/main/Lab-10-Model-Training/Lab10_Model_Training.ipynb) |
+| **Lab 11** | Student Week | — | — | [View Folder](Lab-11-Student-Week/) |
+| **Lab 12** | CNN Feature Visualization & Parameter Audit | 5 Custom 3×3 Filters, ReLU, Max/Avg Pooling, Model A vs Model B Audit | High-Contrast Architectural Facade | [View Folder](Lab-12-CNN-Feature-Visualization/) |
 
 <br />
 
@@ -90,6 +92,14 @@ It covers foundational spatial domain filtering, edge detection and boundary loc
 ### Lab 10: Model Training and Comparative Machine Learning Regression
 - **Folder:** [`Lab-10-Model-Training/`](Lab-10-Model-Training/)
 - Empirical comparative benchmark of six regression architectures (Linear Regression, Decision Tree, Random Forest, XGBoost, K-Nearest Neighbors, MLP Neural Network) on the California Housing dataset. Evaluates leak-free data transformations, multi-metric performance rankings, and runtime complexity trade-offs with complete visualizations.
+
+### Lab 11: Student Week
+- **Folder:** [`Lab-11-Student-Week/`](Lab-11-Student-Week/)
+- Student Week — no laboratory assignment required.
+
+### Lab 12: CNN Feature Visualization, Parameter Audit & Critical Analysis
+- **Folder:** [`Lab-12-CNN-Feature-Visualization/`](Lab-12-CNN-Feature-Visualization/)
+- Visual inspection pipeline applying five custom 3×3 kernels (Sobel-X, Sobel-Y, Sharpen, Gaussian Blur, Emboss) across four sequential stages (Raw Conv, Post-ReLU, MaxPool, AvgPool), manual parameter count audit of Model A (3×3) vs Model B (5×5) verified with TensorFlow `model.summary()`, and critical analysis.
 
 <br />
 
@@ -148,6 +158,15 @@ Computer-Vision-Labs/
 │       ├── rmse_comparison_bar.png
 │       ├── r2_comparison_bar.png
 │       └── model_comparison_dashboard.png
+├── Lab-11-Student-Week/
+│   └── README.md
+├── Lab-12-CNN-Feature-Visualization/
+│   ├── lab12_cnn_visualization.py
+│   ├── README.md
+│   └── visualizations/
+│       ├── input_architecture.png
+│       ├── part1_5x4_feature_grid.png
+│       └── part2_model_summaries.txt
 └── README.md
 ```
 
