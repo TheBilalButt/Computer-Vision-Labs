@@ -42,8 +42,8 @@ It covers foundational spatial domain filtering, edge detection and boundary loc
 | **Lab 08** | Feature Matching and Homography | SIFT, ORB, FLANN Matcher, Lowe Ratio Test, RANSAC Homography, Perspective Warping | Planar Scene Targets | [Launch Colab](https://colab.research.google.com/github/TheBilalButt/Computer-Vision-Labs/blob/main/Lab-08-Feature-Matching-Homography/Lab08_Feature_Matching_Homography.ipynb) |
 | **Lab 09** | Multimodal Psychological State Analysis | Multimodal Feature Fusion, Facial Action Units, Vocal Formants, Linguistic Cues | Multimodal Affect Datasets | [View Full Paper](Lab-09-Psychological-State-Analysis/paper.pdf) |
 | **Lab 10** | Model Training & Comparative ML Regression | 6 Regression Models (OLS, Decision Tree, Random Forest, XGBoost, KNN, MLP) | California Housing Dataset | [Launch Colab](https://colab.research.google.com/github/TheBilalButt/Computer-Vision-Labs/blob/main/Lab-10-Model-Training/Lab10_Model_Training.ipynb) |
-| **Lab 11** | Student Week | — | — | [View Folder](Lab-11-Student-Week/) |
-| **Lab 12** | CNN Feature Visualization & Parameter Audit | 5 Custom 3×3 Filters, ReLU, Max/Avg Pooling, Model A vs Model B Audit | High-Contrast Architectural Facade | [View Folder](Lab-12-CNN-Feature-Visualization/) |
+| **Lab 11** | Student Week | None | None | [View Folder](Lab-11-Student-Week/) |
+| **Lab 12** | CNN Feature Visualization & Parameter Audit | 5 Custom 3×3 Filters, ReLU, Max/Avg Pooling, Model A vs Model B Audit | High-Contrast Architectural Facade | [Launch Colab](https://colab.research.google.com/github/TheBilalButt/Computer-Vision-Labs/blob/main/Lab-12-CNN-Feature-Visualization/Lab12_CNN_Feature_Visualization.ipynb) |
 
 <br />
 
@@ -95,7 +95,7 @@ It covers foundational spatial domain filtering, edge detection and boundary loc
 
 ### Lab 11: Student Week
 - **Folder:** [`Lab-11-Student-Week/`](Lab-11-Student-Week/)
-- Student Week — no laboratory assignment required.
+- Student Week. No laboratory assignment required.
 
 ### Lab 12: CNN Feature Visualization, Parameter Audit & Critical Analysis
 - **Folder:** [`Lab-12-CNN-Feature-Visualization/`](Lab-12-CNN-Feature-Visualization/)
@@ -161,11 +161,14 @@ Computer-Vision-Labs/
 ├── Lab-11-Student-Week/
 │   └── README.md
 ├── Lab-12-CNN-Feature-Visualization/
+│   ├── Lab12_CNN_Feature_Visualization.ipynb
 │   ├── lab12_cnn_visualization.py
 │   ├── README.md
 │   └── visualizations/
 │       ├── input_architecture.png
 │       ├── part1_5x4_feature_grid.png
+│       ├── part1_layman_relu_pooling_explainer.png
+│       ├── part2_parameter_comparison_chart.png
 │       └── part2_model_summaries.txt
 └── README.md
 ```

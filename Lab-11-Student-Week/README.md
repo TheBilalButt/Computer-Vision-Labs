@@ -1,3 +1,3 @@
 # Lab 11: Student Week
 
-**Status:** Student Week — No laboratory assignment or code submission required.
+**Status:** Student Week. No lab assignment or code submission required.
